@@ -1,10 +1,10 @@
 # WeatherApp
-Develop with Kotlin, Android Studio
+Develop with Kotlin, Android Studio.
 
 Uses
 ---------------
-SQLite Database
-Retrofit Library
+SQLite Database,
+Retrofit Library,
 https://openweathermap.org/api Weather api service.
 
 Specifications
