@@ -5,7 +5,7 @@ Uses
 ---------------
 SQLite Database
 Retrofit Library
-https://openweathermap.org/api Weather api service
+https://openweathermap.org/api Weather api service.
 
 Specifications
 ----------------
