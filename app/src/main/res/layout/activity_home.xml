@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".HomeActivity" android:background="#6dd5ed"
+        >
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_height="0dp"
+            android:id="@+id/constraintLayout"
+            >
+
+        <TextView
+                android:text="Humidity: 76%"
+                android:layout_height="wrap_content"
+                android:id="@+id/humidityInfoHome_tv"
+                app:layout_constraintTop_toBottomOf="@+id/pressureInfoHome_tv"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toEndOf="@+id/weatherIconHome_iv"
+                android:layout_marginStart="16dp"
+                />
+
+        <TextView
+                android:text="Cloudiness : Overcast clouds"
+                android:layout_height="wrap_content"
+                android:id="@+id/cloudinessInfoHome_tv"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/windInfoHome_tv"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/weatherIconHome_iv"
+                />
+
+        <TextView
+                android:text="Wind: Gentle Breeze, 4.1 m/s, West ( 280 )"
+                android:layout_height="wrap_content"
+                android:id="@+id/windInfoHome_tv"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/dateInfoHome_tv"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/weatherIconHome_iv"
+                android:layout_marginStart="16dp"
+                />
+
+        <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                app:srcCompat="@drawable/w10n"
+                android:id="@+id/weatherIconHome_iv"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintTop_toBottomOf="@+id/cityNameHome_tv"
+                />
+
+        <TextView
+                android:text="10 °C"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/weatherDegreeHome_tv"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/weatherIconHome_iv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/weatherIconHome_iv"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                />
+
+        <TextView
+                android:text="City Name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cityNameHome_tv"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textAlignment="center"
+                />
+
+        <TextView
+                android:text="Weather Info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/weatherInfoHome_tv"
+                app:layout_constraintTop_toBottomOf="@+id/cityNameHome_tv"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/weatherIconHome_iv"
+                android:layout_marginStart="16dp"
+                />
+
+        <TextView
+                android:text="Date: 11/11/1111"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateInfoHome_tv"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/weatherInfoHome_tv"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/weatherIconHome_iv"
+                android:layout_marginStart="16dp"
+                />
+
+        <TextView
+                android:text="Sunrise : 00:00  Sunset: 00:00"
+                android:layout_height="wrap_content"
+                android:id="@+id/sunInfoHome_tv"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/humidityInfoHome_tv"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/weatherIconHome_iv"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        <TextView
+                android:text="Pressure	: 1022 hpa"
+                android:layout_height="wrap_content"
+                android:id="@+id/pressureInfoHome_tv"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/cloudinessInfoHome_tv"
+                android:layout_width="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintStart_toEndOf="@+id/weatherIconHome_iv"
+                android:layout_marginStart="16dp"
+                />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/city_rv"
+            tools:listitem="@layout/city_recyclerview_item"
+            android:scrollbars="vertical"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            />
+</android.support.constraint.ConstraintLayout>

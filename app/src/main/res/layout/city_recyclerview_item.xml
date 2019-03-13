@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_corner_radius"
+        android:padding="3dp"
+        android:layout_margin="3dp"
+        >
+
+    <TextView
+            android:text="Humidity: 76%"
+            android:layout_height="wrap_content"
+            android:id="@+id/humidityInfo_tv"
+            app:layout_constraintTop_toBottomOf="@+id/pressureInfo_tv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/weatherIcon_iv"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    <TextView
+            android:text="Cloudiness : Overcast clouds"
+            android:layout_height="wrap_content"
+            android:id="@+id/cloudinessInfo_tv"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/windInfo_tv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/weatherIcon_iv"
+            />
+
+    <TextView
+            android:text="Wind: Gentle Breeze, 4.1 m/s, West ( 280 )"
+            android:layout_height="wrap_content"
+            android:id="@+id/windInfo_tv"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/dateInfo_tv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/weatherIcon_iv"
+            android:layout_marginStart="16dp"
+            />
+
+    <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            app:srcCompat="@drawable/w10n"
+            android:id="@+id/weatherIcon_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitXY"
+            />
+
+    <TextView
+            android:text="10 °C"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/weatherDegree_tv"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/weatherIcon_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/weatherIcon_iv"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
+
+    <TextView
+            android:text="City Name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityName_tv"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/weatherIcon_iv"
+            android:layout_marginStart="16dp"
+            />
+
+    <TextView
+            android:text="Weather Info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/weatherInfo_tv"
+            app:layout_constraintTop_toBottomOf="@+id/cityName_tv"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/weatherIcon_iv"
+            android:layout_marginStart="16dp"
+            />
+
+    <TextView
+            android:text="Date: 11/11/1111"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateInfo_tv"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/weatherInfo_tv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/weatherIcon_iv"
+            android:layout_marginStart="16dp"
+            />
+
+    <TextView
+            android:text="Pressure	: 1022 hpa"
+            android:layout_height="wrap_content"
+            android:id="@+id/pressureInfo_tv"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/cloudinessInfo_tv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/weatherIcon_iv"
+            android:layout_marginStart="16dp"
+            />
+</android.support.constraint.ConstraintLayout>
