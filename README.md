@@ -3,7 +3,7 @@ Develop with Kotlin, Android Studio
 
 Uses
 ---------------
-SQLite Database
+SQLite Database\n
 Retrofit Library
 https://openweathermap.org/api Weather api service.
 
